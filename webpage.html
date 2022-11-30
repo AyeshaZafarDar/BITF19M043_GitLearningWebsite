@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Learning Website</title>
+</head>
+<body style="background-color:rgb(180, 226, 13) ;">
+    <center>
+        <h1><i>BITF19M043-AYESHA ZAFAR DAR</i></h1>
+        <h1>ASSIGNMENT-01</h1>
+        <h1>Merge Conflict & Git Commands Description</h1>
+    </center> 
+    <h2><u><b>Step 1</b></u></h2> 
+    <p>• After creating a new, empty git repository and adding some content to the query.html file, I made two commits to the
+    master branch.</p>
+    <center>
+        <h3><u><b>Snapshot of Query.html File</b></u></h3>
+        <img src="images/image1.png" alt="">
+        <h3><u>Snapshot of executed Git commands & its Description</u></h3>
+        <p><b>git init: </b> Creates a brand-new repository in the Git version control system. This is the primary command to master if you intend to
+        use revision control with your project.</p>
+        <p><b>git add [filename]:</b>Moves changes from the working directory to the staging area. This gives you the opportunity to prepare a snapshot
+        before committing it to the official history.</p>
+        <p><b>git commit -m [message]:</b>Takes the staged snapshot and commits it to the project history with a message. Combined with git add, this defines the basic workflow
+        for all Git users.</p>
+        <img src="images/image2.png" alt="">
+        <h3><u>Displays a record of all commits made to the repository's master branch using the Git log command</u></h3>
+        <p><b>git log: </b>This command is used to check the commit history.</p>
+        <img src="images/image3.png" alt="">
+    </center>
+    <h2><u><b>Step 2</b></u></h2>
+    <p>• Using the git checkout -b feature command, I've established a new Branch called feature.</p>
+    <p>• Since there are now two distinct branches, Master and Feature, I decided to make a few edits to the query.html file in
+    the feature branch.</p>
+    <center>
+        <h3><u><b>Snapshot of Query.html File</b></u></h3>
+        <img src="images/image4.png" alt="">
+        <h3><u>Snapshot of executed Git commands & its Description</u></h3>
+        <p><b>git checkout -b [branchName]:</b> Create the new branch on your local machine and switch in this branch.</p>
+        <p><b>git branch: </b>This command lists all the branches available in the repository.</p>
+        <img src="images/image5.png" alt="">
+        <h3><u>Displays a record of all commits made to the repository's master & feature branch using the Git log command</u></h3>
+        <p><b>git log: </b>This command is used to check the commit history.</p>
+        <img src="images/image6.png" alt="">
+    </center>
+    <h2><u><b>Step 3</b></u></h2>
+    <p>• Once again, using the command "git checkout master," I have returned to the master branch and made some edits to the
+    query.html file.</p>
+    <center>
+        <h3><u><b>Snapshot of Query.html File</b></u></h3>
+        <img src="images/image7.png" alt="">
+        <h3><u>Snapshot of executed Git commands & its Description</u></h3>
+        <p><b>git checkout [branchName]: </b> This command is used to switch from one branch to another.</p>
+        <img src="images/image8.png" alt="">
+        <h3><u>Displays a record of all commits made to the repository's master branch using the Git log command</u></h3>
+        <p><b>git log: </b>This command is used to check the commit history.</p>
+        <img src="images/image9.png" alt="">
+        <h3>I used the command “git log --all” to view every single commit I've made to both the master and the feature branches.</h3>
+        <img src="images/image10.png" alt="">
+    </center>
+    <h2><u><b>Step 4</b></u></h2>
+    <p>• And now, with the help of the git merge feature command, I'd want to combine my two branches, master and feature.</p>
+    <center>
+        <p><b>git merge [branchname]: </b>This command merges the specified branch’s history into the current branch.</p>
+        <img src="images/image11.png" alt="">
+    </center>
+    <p>• Since just one line of the query.html file was modified between the master and feature branches highlighted in the
+    above snapshot, a merge conflict has arisen as a result of this difference in content. In order to fix this, I've
+    decided to go ahead and commit to the change that was made in the feature branch.</p>
+    <p>• A snapshot of the master and feature branches being merged after a conflict was resolved is shown below.</p>
+    <center>
+        <img src="images/image12.png" alt="">
+        <h3><u>Snapshot of executed Git commands & its Description</u></h3>
+        <p><b>git status: </b>This command lists all the files that have to be committed.</p>
+        <img src="images/image13.png" alt="">
+    </center>
+
+    
+</body>
+</html>
